@@ -1,0 +1,12 @@
+{
+    "name": "Calculator",
+    "short_description": "question Calculator",
+    "description": "automate process",
+    "icon": "./assets/logo-claro.png",
+    "author": "Pipefy, Inc.",
+    "init_url": "./",
+    "screenshots": [""],
+    "features": [
+      "pipe-buttons"
+    ]
+  }
