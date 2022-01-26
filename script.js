@@ -85,7 +85,7 @@ async function enviar() {
         }
     })
     data.map((value) => {
-        if (value.name == "IMPLEMENTAÇÃO DE BOAS PRÁTICAS / PAPÉIS E RESPONSABILIDADE") {
+        if (value.name == "IMPLEMENTAÇÃO DE BOAS PRÁTICAS / PAPÉIS E RESPONSABILIDADES") {
             questionTen = parseFloat(value.value);
         }
     })
@@ -95,7 +95,8 @@ async function enviar() {
         }
     })
 
-    let result = parseFloat((questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix + questionSeven + questionEight + questionNine + questionTen + questionEleven)).toFixed(2)
+    let result = (questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix + questionSeven + questionEight + questionNine + questionTen + questionEleven)
+     console.log(typeof(result))
 
     if (result >= 0 || result <= 0) {
         document.getElementById("show-sum").innerHTML = result;
