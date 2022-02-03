@@ -101,7 +101,6 @@ async function enviar() {
             questionTwelve = parseFloat(value.value);
         }
     })
-    console.log(typeof(questionTwelve))
 
     let result = (questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix + questionSeven + questionEight + questionNine + questionTen + questionEleven + questionTwelve)
 
