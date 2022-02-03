@@ -11,6 +11,7 @@ async function enviar() {
     let questionNine = "";
     let questionTen = "";
     let questionEleven = "";
+    let questionTwelve = "";
 
 
     let data = [];
@@ -95,8 +96,14 @@ async function enviar() {
         }
     })
 
-    let result = (questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix + questionSeven + questionEight + questionNine + questionTen + questionEleven)
-     console.log(typeof(result))
+    data.map((value) => {
+        if (value.name == "2.2 Score de Prioridade") {
+            questionTwelve = parseFloat(value.value);
+        }
+    })
+    console.log(typeof(questionTwelve))
+
+    let result = (questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix + questionSeven + questionEight + questionNine + questionTen + questionEleven + questionTwelve)
 
     if (result >= 0 || result <= 0) {
         document.getElementById("show-sum").innerHTML = result;
