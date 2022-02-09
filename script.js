@@ -104,7 +104,9 @@ async function enviar() {
 
     let result = (questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix + questionSeven + questionEight + questionNine + questionTen + questionEleven + questionTwelve)
 
-    if (result >= 0 || result <= 0) {
+    console.log(typeof(result))
+
+    if (typeof(result) == 'number') {
         document.getElementById("show-sum").innerHTML = result;
 
         const options = {
@@ -130,7 +132,7 @@ async function enviar() {
 
 
     } else {
-        alert("Preencha todos os campos");
+        alert("Verifique se todos os campos manuais e automáticos estão preenchidos na fase TRIAGEM");
     }
 
 }
