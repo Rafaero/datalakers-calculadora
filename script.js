@@ -104,11 +104,10 @@ async function enviar() {
 
     let result = (questionOne + questionTwo + questionThree + questionFour + questionFive + questionSix + questionSeven + questionEight + questionNine + questionTen + questionEleven + questionTwelve)
 
-    console.log(typeof(result))
-
     if (typeof(result) === 'number' &&  isNaN(result) != true) {
+
         document.getElementById("show-sum").innerHTML = result;
-        console.log(result)
+
         const options = {
             method: 'POST',
             headers: {
