@@ -106,9 +106,9 @@ async function enviar() {
 
     console.log(typeof(result))
 
-    if (typeof(result) == 'number') {
+    if (typeof(result) === 'number' &&  isNaN(result) != true) {
         document.getElementById("show-sum").innerHTML = result;
-
+        console.log(result)
         const options = {
             method: 'POST',
             headers: {
