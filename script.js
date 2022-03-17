@@ -1,3 +1,6 @@
+function goBack(){
+    window.history.back();
+}
 async function enviar() {
     let id = document.getElementById("idField").value;
     let questionOne = "";
